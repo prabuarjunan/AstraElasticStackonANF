@@ -19,8 +19,11 @@ As part of the configuration, you will implement the below steps
 7.	Take a consistent application backup with 3DSnap and restore the Elasticsearch cluster.
 
 ## Setup a Azure Kubernetes Service (AKS)
-This article assumes that you have an existing AKS cluster. If you need an AKS cluster, see the AKS quickstart <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=netapp&regions=all" title="About Me">or <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=netapp&regions=all" title="About Me">.
-Important
-Your AKS cluster must also be <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=netapp&regions=all" title="About Me">in a region that supports Azure NetApp Files.</a>.
-You also need the Azure CLI version 2.0.59 or later installed and configured. 
-Run az --version to find the version. If you need to install or upgrade, see <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli" title="About Me">Install Azure CLI</a>
+This article assumes that you have an existing AKS cluster. If you need an AKS cluster, see the AKS quickstart <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=netapp&regions=all" title="About Me">using the Azure CLI</a>
+ or <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=netapp&regions=all" title="About Me">using the Azure portal</a>.
+<br />Important
+<br />Your AKS cluster must also be <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=netapp&regions=all" title="About Me">in a region that supports Azure NetApp Files.</a>
+<br />You also need the Azure CLI version 2.0.59 or later installed and configured. 
+<br />Run az --version to find the version. If you need to install or upgrade, see <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli" title="About Me">Install Azure CLI</a> 
+<br />It would be best to deploy a multiple node Kubernetes cluster based on the default AKS configuration.
+![image](https://user-images.githubusercontent.com/31085459/151629080-1f0686e1-37ad-4f48-87ae-cf6f4840ff58.png)
