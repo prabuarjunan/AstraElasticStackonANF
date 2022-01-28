@@ -29,7 +29,7 @@ spec:
           name: inter-node
           protocol: TCP
         volumeMounts:
-        - name: data
+        - name: netappdata
           mountPath: /usr/share/elasticsearch/data
         env:
           - name: cluster.name
@@ -51,7 +51,7 @@ spec:
         securityContext:
           privileged: true
         volumeMounts:
-        - name: data
+        - name: netappdata
           mountPath: /usr/share/elasticsearch/data
       - name: increase-vm-max-map
         image: busybox
@@ -65,7 +65,7 @@ spec:
           privileged: true
   volumeClaimTemplates:
   - metadata:
-      name: data
+      name: netappdata
       labels:
         app: elasticsearch
     spec:

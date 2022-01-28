@@ -10,6 +10,9 @@ spec:
     config:
       node.store.allow_mmap: false
   http:
+    service:
+      spec:
+        type: LoadBalancer #Adds a External IP
     tls:
       selfSignedCertificate:
         disabled: true
